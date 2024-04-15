@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  "problemaimg problemastickers"
+  "problemapassword problemastickers"
+  ;
+  grid-template-columns: 40vw calc(100vw - 40vw);
+  grid-template-rows: 50vh 50vh;
+}
+
+.problema-img {
+  grid-area: problemaimg;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.monito-img {
+  width: 400px;
+  cursor: pointer;
+}
+
+.problema-stickers {
+  grid-area: problemastickers;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.problema-password {
+  grid-area: problemapassword;
+  background-color: rgb(63, 63, 63);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-sticker {
+  display: flex;
+  align-items: baseline;
+  gap: 60px;
+}
+
+.sticker {
+  display: flex;
+  flex-direction: column;
+}
+
+.sticker img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.contenedor-verificador {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.boton-verificacion {
+  background-color: coral;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: .5rem;
+  border-style: hidden;
+}
+
+.boton-verificacion:hover {
+  background-color: rgb(199, 79, 36);
+}
+
+.pass-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pass-container h2 {
+  margin-bottom: 50px;
+}
+
+.verificacion-pass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  color: #FFFFFF;
+  gap: 20px;
+}
+
+.pass {
+  background-color: #000000;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  color: #FFFFFF;
+}
+
+.boton-password {
+  background-color: rgb(238, 159, 13);
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: .5rem;
+  border-style: hidden;
+}
+
+.boton-password:hover {
+  background-color: rgb(181, 122, 11);
+}
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Condiciones Javascrip — Julio Olivares</title>
+</head>
+<body onload="myOnLoad()">
+  <div class="grid-container">
+    <div id="problema-img" class="problema-img">
+      <h2>Clickea en la imagen</h2>
+      <img id="monito-img" class="monito-img" src="assets/img/monito.jpg" alt="Mono sorprendido">
+    </div>
+    <div id="problema-stickers" class="problema-stickers">
+      <h2>Lleve de lo weno</h2>
+      <div class="contenedor-sticker">
+        <div class="sticker">
+          <img id="sticker-img" class="sticker-img" src="assets/img/roundsticker.png" alt="stickerql">
+          <input  value="0" id="stickerUno" class="sticker-input" type="number" placeholder="Ingresa una cantidad">
+        </div>
+        <div class="sticker">
+          <img id="sticker-img" class="sticker-img" src="assets/img/squaresticker.png" alt="stickerctm">
+          <input  value="0" id="stickerDos" class="sticker-input" type="number" placeholder="Ingresa una cantidad">
+        </div>
+        <div class="sticker">
+          <img id="sticker-img" class="sticker-img" src="assets/img/rectanglesticker.png" alt="stickerhdp">
+          <input  value="0" id="stickerTres" class="sticker-input" type="number" placeholder="Ingresa una cantidad">
+        </div>
+      </div>
+      <div class="contenedor-verificador">
+        <p id="para-verificador" class="parrafo"></p>
+        <button id="btn-verificador" class="boton-verificacion">Llevar</button>
+      </div>
+    </div>
+    <div id="problema-password" class="problema-password">
+      <div class="pass-container">
+        <div class="pass-title">
+          <h2>Ingresa tu clave de 3 dígitos</h2>
+        </div>
+        <div class="select-container">
+          <select name="pass" id="passUno" class="pass">
+            <option value="0">0</option>
+          </select>
+          <select name="pass" id="passDos" class="pass">
+            <option value="0">0</option>
+          </select>
+          <select name="pass" id="passTres" class="pass">
+            <option value="0">0</option>
+          </select>
+        </div>
+        <div id="verificacion-pass" class="verificacion-pass">
+          <p id="para-pass" class="parrafo"></p>
+          <button id="btn-pass" class="boton-password">Ingresar</button>
+        </div>
+    </div>
+  </div>
+
+<script src="./assets/js/app.js"></script>
+
+</body>
+</html>
